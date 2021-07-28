@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
   <head>
-    <title>打字机JS</title>
+    <title>demo</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
   </head>
+  <style>
+	#asklz{
+		color:red;
+		font-size:68px;
+		font-weight:600;
+		font-style:italic;
+		margin:300px;
+	}
+  </style>
   <body>
     <div id="asklz">
       
@@ -13,20 +22,26 @@
 		var typewriter = new Typewriter(asklz, {
    			 loop: true
 		});
-		typewriter.typeString('打字机 JS 示例')
+		typewriter.typeString('你猜猜这是啥')
   		 	.pauseFor(2500)
   	 		.deleteAll()
-  	 		.typeString('该说些什么呢？')
+  	 		.typeString('是不是很有趣')
  	  		.pauseFor(2500)
 			.typeString('让我好好想想..')
 			.deleteAll()
 			.typeString('有了！')
 			.pauseFor(2500)
 			.deleteAll()
+			.typeString('偷偷告诉你个天大的秘密！')
+			.pauseFor(2500)
+			.deleteAll()
+			.typeString('其实······')
+			.pauseFor(2500)
+			.deleteChars(6)
 			.typeString('其实，我挺帅的')
 			.pauseFor(2500)
-  			.deleteChars(3)
-  	 		.typeString('很谦虚!')
+			.deleteAll()
+  	 		.typeString('哈哈，低调低调，做人一定要谦虚!')
   	 		.start();
     </script>
 
